@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Monaghan Way Walking Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles/main.css" rel="stylesheet" />
+  <script type="text/javascript" src="scripts/respond.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="skipTo">
+      <ul>
+        <li><a href="#main">Skip to Main Content</a></li>
+      </ul>
+    </nav>
+
+    <div id="logo">
+      <img src="images/My Images/Final Logo -transparent.png" alt="Logo" />
+    </div>
+	  
+      <!-- burger -->
+    <div id="burger">&#9776;</div>
+
+	  <!-- navigation -->
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus2.html">About us</a></li>
+        <li><a href="walkschedule.html">Walk Schedule</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="banner">
+    <img src="images/My Images/Photo Gallery/Ready photos/Webpics/mainpahepicture.jpg" alt="Banner Image" />
+  </div>
+
+  <section id="main">
+    <div class="info-text">
+      <h1>Gallery</h1>
+      <h3>Our adventures through the Monaghan Way</h3>
+    </div>
+
+    <div class="photo-gallery">
+      <!-- Gallery Images -->
+      <img src="images/My Images/Photo Gallery/Ready photos/Gallery/5.jpg" alt="Walk 1" />
+	<img src="images/My Images/Photo Gallery/Ready photos/Gallery/7.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/8-Enhanced-SR.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_102658526.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_102746190.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_103100288.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_103110612.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_104545846.MP-Enhanced-SR.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_111953500.RAW-01.MP.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_132438823.RAW-01.MP.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/PXL_20250120_133308964.RAW-01.MP.jpg" alt="Walk 1" />
+		<img src="images/My Images/Photo Gallery/Ready photos/Gallery/vlcsnap-2025-04-13-20h43m55s001.jpg" alt="Walk 1" />
+
+    </div>
+  </section>
+
+  <section id="columns">
+    <aside>
+      <img src="images/My Images/Photo Gallery/Ready photos/Webpics/vlcsnap-2025-04-13-20h46m41s812.jpg" alt="Scenic view" />
+    </aside>
+
+    <aside>
+      <div>
+        <p>Upcoming meeting</p>
+        <ul>
+          <li>Date: <strong>17 May</strong></li>
+          <li>Location: <strong>Monaghan Library</strong></li>
+          <li>Difficulty: <strong>A</strong></li>
+        </ul>
+      </div>
+    </aside>
+
+    <aside>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2330.9469830536605!2d-6.969878722656696!3d54.251823172565715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48609f4160d00b91%3A0x6d7517a62afc2818!2sMonaghan%20Library!5e0!3m2!1sen!2sie!4v1743763392705!5m2!1sen!2sie" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+  </section>
+
+  <footer>
+    <p>Monaghan Way Walking Club</p>
+    <p>&copy; 2025</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Full size image" />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("mainNav");
+      burger.addEventListener("click", function () {
+        nav.classList.toggle("open");
+      });
+
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".lightbox .close");
+      const galleryImages = document.querySelectorAll(".photo-gallery img");
+
+      galleryImages.forEach(img => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "block";
+          lightboxImg.src = img.src;
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Green Smoothies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles/main.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="scripts/respond.min.js"></script>
+</head>
+
+<body class="center">
+
+  <header>
+    <nav id="skipTo">
+      <ul>
+        <li><a href="#main" title="Skip to Main Content">Skip to Main Content</a></li>
+      </ul>
+    </nav>
+
+    <div id="logo">
+      <img src="images/My Images/Final Logo -transparent.png" alt="Company Logo" />
+    </div>
+
+    <!-- burger -->
+    <div id="burger">&#9776;</div>
+
+    <!-- navigation -->
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="aboutus2.html" title="About us">About us</a></li>
+        <li><a href="walkschedule.html" title="Walk Schedule">Walk Schedule</a></li>
+        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+        <li><a href="contactus.html" title="Contact us">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="banner">
+    <img src="images/My Images/Photo Gallery/Ready photos/Webpics/vlcsnap-2025-04-13-20h50m15s724.jpg" alt="banner" width="1414" height="676" />
+  </div>
+
+  <section class="walk-schedule" id="main">
+	  <h1>Upcoming Walks List</h1>
+      
+<!-- Schedule  Table -->
+<div class="table-container">
+  <table class="membership-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Difficulty Level&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Date Meeting 1</td>
+        <td>&nbsp;Location&nbsp;Meeting 1</td>
+        <td>
+          &nbsp;Difficulty Level&nbsp;Meeting 1</td>
+      </tr>
+      <tr>
+        <td>Date&nbsp;Meeting2</td>
+        <td>&nbsp;Location&nbsp;Meeting2</td>
+        <td>
+          &nbsp;Difficulty Level&nbsp;Meeting2</td>
+      </tr>
+      <tr>
+        <td>Date&nbsp;Meeting3</td>
+        <td>&nbsp;Location&nbsp;Meeting3</td>
+        <td>&nbsp;Difficulty Level&nbsp;Meeting 3</td>
+      </tr>
+		
+    </tbody>
+  </table>
+</div>
+  </section>
+
+  <section id="columns">
+    <aside><img src="images/My Images/Photo Gallery/Ready photos/Webpics/vlcsnap-2025-04-13-20h46m41s812.jpg" alt="" width="1920" /></aside>
+
+    <aside>
+      <div>
+        <p>Upcoming meeting</p>
+        <ul>
+          <li>Dates of upcoming walk: <strong>17 May</strong></li>
+          <li>Meeting location: <strong>Monaghan Library</strong></li>
+          <li>Difficulty level: <strong>A</strong></li>
+        </ul>
+      </div>
+    </aside>
+
+    <aside>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2330.9469830536605!2d-6.969878722656696!3d54.251823172565715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48609f4160d00b91%3A0x6d7517a62afc2818!2sMonaghan%20Library!5e0!3m2!1sen!2sie!4v1743763392705!5m2!1sen!2sie" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+  </section>
+
+  <footer>
+    <p>Monaghan Way Walking Club</p>
+    <p>&copy; 2025</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("mainNav");
+      burger.addEventListener("click", function () {
+        nav.classList.toggle("open");
+      });
+    });
+  </script>
+</body>
+</html>
